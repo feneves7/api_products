@@ -24,9 +24,6 @@ mongoose.connect(urlDatabase, {
 
 requireDir('./src/models');
 
-
-app.use('/', (req, res) => res.send("Bem vindo"));
-
 app.use('/api', require('./src/routes'));
 
 const port = process.env.PORT || 8080;
